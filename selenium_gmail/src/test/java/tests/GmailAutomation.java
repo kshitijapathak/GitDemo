@@ -31,13 +31,16 @@ public class GmailAutomation {
             String body = row[4];
 
             // Launch Gmail
+            System.out.print("Launch gmail");
             driver.manage().window().maximize();
             driver.get("https://www.gmail.com");
 
             // Log in to Gmail
+            System.out.print("Login Gmail");
             gmailPage.login(email, password);
 
             // Compose and send the email
+            System.out.print("Compose Email");
             gmailPage.composeEmail(recipient, subject, body);
 
             // Navigate to Sent folder and verify the email
