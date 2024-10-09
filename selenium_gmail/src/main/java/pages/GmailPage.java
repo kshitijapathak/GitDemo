@@ -31,6 +31,9 @@ public class GmailPage {
     public void login(String email, String password) {
         try {
         	System.out.print("login");
+        	System.out.print("login");
+        	System.out.print("login");
+        	System.out.print("login");
             WebElement emailField = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("identifierId")));
             emailField.sendKeys(email);
             driver.findElement(By.id("identifierNext")).click();
